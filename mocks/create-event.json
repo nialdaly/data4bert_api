@@ -1,0 +1,8 @@
+{
+    "body": "{\"title\":\"Philosopher's Stone\",\"context\":\"Harry lived in Surrey.\",\"question\":\"Where did Harry live?\",\"text\":\"Surrey\"}",
+    "requestContext": {
+      "identity": {
+        "cognitoIdentityId": "USER-ND-1"
+      }
+    }
+  }
