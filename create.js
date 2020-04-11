@@ -7,7 +7,7 @@ export const main = handler(async (event, context) => {
 
   // gets the start position of the answer in the context
   const paragraph = data.context;
-  const answer = data.text;
+  const answer = data.answer;
   const answerStart = paragraph.indexOf(answer);
 
   const params = {
@@ -19,7 +19,7 @@ export const main = handler(async (event, context) => {
       titleId: data.title,
       context: data.context,
       question: data.question,
-      text: data.text,
+      answer: data.answer,
       answerStart: answerStart,
       createdAt: Date.now()
     }

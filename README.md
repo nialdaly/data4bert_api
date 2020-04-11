@@ -1,8 +1,8 @@
 # Data4BERT APIs
 
-Data4BERT backend API developed using AWS Lambda, API Gateway and Serverless Framework. This code was heavily influenced by [Serverless Stack].(https://serverless-stack.com/)
+Data4BERT backend API developed using AWS Lambda, API Gateway and Serverless Framework. This code was heavily influenced by [Serverless Stack](https://serverless-stack.com/).
 
-### Test Functions
+### API Testing
 
 To test each API using the following commands in the root directory;
 - create 
@@ -13,3 +13,9 @@ To test each API using the following commands in the root directory;
 
 - list
   -`serverless invoke local --function list --path mocks/list-event.json`
+
+- update
+  -`serverless invoke local --function update --path mocks/update-event.json`
+
+- delete
+  -`serverless invoke local --function delete --path mocks/delete-event.json`
