@@ -1,3 +1,4 @@
+import * as uuid from "uuid";
 import handler from "./libs/handler-lib";
 import dynamoDb from "./libs/dynamodb-lib";
 
@@ -14,6 +15,7 @@ export const main = handler(async (event, context) => {
 
     Item: {
       userId: event.requestContext.identity.cognitoIdentityId,
+      itemId: uuid.v1(),
       titleId: data.title,
       context: data.context,
       question: data.question,

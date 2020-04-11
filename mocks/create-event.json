@@ -1,8 +1,8 @@
 {
-    "body": "{\"title\":\"Philosopher's Stone\",\"context\":\"Harry lived in Surrey.\",\"question\":\"Where did Harry live?\",\"text\":\"Surrey\"}",
-    "requestContext": {
-      "identity": {
-        "cognitoIdentityId": "USER-ND-1"
-      }
+  "body": "{\"title\":\"Philosopher's Stone\",\"context\":\"They bought Harry's school books in a shop called Flourish and Blotts where the shelves were stacked to the ceiling with books as large as paving stones bound in leather.\",\"question\":\"What book shop did Harry buy school books?\",\"text\":\"Flourish and Blotts\"}",
+  "requestContext": {
+    "identity": {
+      "cognitoIdentityId": "USER-ND-1"
     }
   }
+}

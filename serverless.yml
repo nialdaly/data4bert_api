@@ -36,7 +36,7 @@ provider:
 
 functions:
   # Defines an HTTP API endpoint that calls the main function in create.js
-  # - path: url path is /notes
+  # - path: url path is /data4bert
   # - method: POST request
   # - cors: enabled CORS (Cross-Origin Resource Sharing) for browser cross
   #     domain api call
@@ -45,7 +45,19 @@ functions:
     handler: create.main
     events:
       - http:
-          path: notes
+          path: data4bert
           method: post
+          cors: true
+          authorizer: aws_iam
+
+  get:
+    # Defines an HTTP API endpoint that calls the main function in get.js
+    # - path: url path is /data4bert/{id}
+    # - method: GET request
+    handler: get.main
+    events:
+      - http:
+          path: data4bert/{id}
+          method: get
           cors: true
           authorizer: aws_iam
